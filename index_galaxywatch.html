@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel Rápido | Galaxy Watch</title>
+  <style>
+    body { font-family: sans-serif; background: #fff; color: #111; margin: 10px; font-size: 1.1em; }
+    h1 { font-size: 1.3em; text-align: center; }
+    .section { padding: 10px; margin-bottom: 8px; border: 1px solid #ccc; border-radius: 8px; }
+    label { display: block; margin: 5px 0; }
+    input[type="checkbox"] { transform: scale(1.2); margin-right: 8px; }
+    .alarms button { display: block; width: 100%; margin: 5px 0; padding: 8px; font-size: 1em; background: #007aff; color: white; border: none; border-radius: 6px; }
+    .alarms button:active { background: #005bbb; }
+  </style>
+  <script>
+    function configurarAlarma(hora, texto) {
+      alert("⏰ Por favor, configura una alarma en tu Galaxy Watch para:\n\n" + texto + " a las " + hora);
+    }
+  </script>
+</head>
+<body>
+  <h1>✔️ Rutina Diaria Express</h1>
+
+  <div class="section">
+    <label><input type="checkbox"> Respiración (mañana)</label>
+    <label><input type="checkbox"> Sol y agua</label>
+    <label><input type="checkbox"> Caminata 10 min</label>
+    <label><input type="checkbox"> Yoga / estiramiento</label>
+    <label><input type="checkbox"> Dormir bien</label>
+  </div>
+
+  <div class="section alarms">
+    <h2>⏱ Alarmas</h2>
+    <button onclick="configurarAlarma('07:30', 'Respiración guiada')">07:30 Respiración</button>
+    <button onclick="configurarAlarma('08:00', 'Exposición al sol y agua')">08:00 Sol & Agua</button>
+    <button onclick="configurarAlarma('10:30', 'Caminata breve')">10:30 Caminata</button>
+    <button onclick="configurarAlarma('13:00', 'Almuerzo & Pausa')">13:00 Almuerzo</button>
+    <button onclick="configurarAlarma('16:00', 'Segunda pausa activa')">16:00 Descanso</button>
+    <button onclick="configurarAlarma('21:30', 'Cierre y relajación')">21:30 Cierre</button>
+  </div>
+</body>
+</html>
